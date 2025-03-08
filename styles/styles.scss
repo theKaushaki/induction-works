@@ -5,24 +5,30 @@
     list-style: none;
 }
 
-:root{
-    --color-primary: #191d2b;
-    --color-secondary: #27AE60;
-    --color-white: #FFFFFF;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #dbe1e8;
-    --color-grey-2: #b2becd;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #2a2e35;
-    --color-grey-6: #12181b;
-    --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+:root {
+  --color-primary: #1c0f0a;  /* Mahogany Obsidian - Strength, Depth, Timelessness */
+  --color-secondary: #b26f29;  /* Temple Crown Gold - Prestige, Sacred Wealth */
+  --color-accent: #a8323e;  /* Kesar Vermilion - Rituals, Celebration, Power */
+  --color-accent-2: #12492f;  /* Rajya Pataka Teal - Honor, Stability, Prosperity */
+  --color-accent-3: #2b5c8a;  /* Grantha Indigo - Wisdom, Classical Art, Sacred Texts */
+  --color-white: #f5e8d0;  /* Parchment Ivory - Knowledge, Grace, Spiritual Purity */
+  --color-black: #090806;  /* Onyx Midnight - Mystery, Royal Intrigue */
+
+  --color-grey0: #261810;  /* Dark Walnut - Palace Interiors, Ornate Woodwork */
+  --color-grey-1: #3c2a1e;  /* Antique Sandalwood - Sacred Firewood, Temple Gates */
+  --color-grey-2: #644531;  /* Burnished Copper - Metal Engravings, Sacred Lamps */
+  --color-grey-3: #8a5b3e;  /* Polished Bronze - Armor, Deity Adornments */
+  --color-grey-4: #b77945;  /* Kalinga Amber Gold - Festival Drapes, War Banners */
+  --color-grey-5: #e0aa64;  /* Chola Sun Gold - Luminous Glory, Eternal Divinity */
+  --color-grey-6: #f2c77c;  /* Rajyabhishek Gold - Coronation, Prestige, Honor */
+
+  --br-sm-2: 18px;
+  --box-shadow-1: 0 6px 30px rgba(202, 163, 73, 0.5); /* Balanced Golden Glow */
 }
 
+
 body{
-    background-color: var(--color-primary);
+    background-color: black;
     font-size: 1.1rem;
     color: var(--color-white);
     transition: all .4s ease-in-out;
@@ -98,7 +104,7 @@ section{
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-  .active-btn{
+  .active-btn {
     background-color: var(--color-secondary);
     transition: all .4s ease-in-out;
     i{
