@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Definitions -->
+  <defs>
+    <!-- Neon glow effect -->
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feFlood flood-color="#00FFFF" result="color" />
+      <feComposite in="color" in2="blur" operator="in" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Dark circular background -->
+  <circle cx="100" cy="100" r="95" fill="#0D0221" />
+  
+  <!-- Decorative elements -->
+  <path d="M50 130 Q100 145 150 130" stroke="#FF00FF" stroke-width="2" fill="none" />
+  <path d="M50 135 Q100 150 150 135" stroke="#00FFFF" stroke-width="1" fill="none" />
+  
+  <!-- Stylized K -->
+  <path d="M70 60 L70 140 M70 100 L100 60 M70 100 L100 140" stroke="#00FFFF" stroke-width="6" fill="none" filter="url(#neonGlow)" />
+  
+  <!-- Text with "the" -->
+  <g filter="url(#neonGlow)">
+    <text x="100" y="160" font-family="Arial" font-size="14" font-weight="bold" fill="#FF00FF" text-anchor="middle">theKaushaki</text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <polygon points="130,60 140,70 120,70" fill="#FF00FF" />
+  <circle cx="140" cy="80" r="8" fill="#00FFFF" />
+  
+  <!-- Circular border with glow -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#FF00FF" stroke-width="3" filter="url(#neonGlow)" />
+</svg>
