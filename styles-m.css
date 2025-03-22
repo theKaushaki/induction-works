@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+
+:root {
+    --background: #261810; 
+    --text-color: #f5e8d0; 
+    --highlight: #e5903d; 
+    --accent: #a8323e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+    padding: 12px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    align-items: center;
+    background-color: var(--background);
+    background: linear-gradient(to bottom, #dfdbd8, var(--background));
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.hero {
+    padding: 20px 20px;
+    background-size: cover;
+    background: linear-gradient(to bottom, #542f10, var(--background));
+    background-blend-mode: multiply;
+    border-radius: 12px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: var(--highlight);
+    text-shadow: 3px 3px var(--accent);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+.about {
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #5b310f, var(--background));
+    padding: 20px;
+    margin-bottom: 7px;
+}
+
+.tribute {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #884318, var(--background));
+}
+
+.tribute-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tribute-item {
+    width: 30%;
+    padding: 20px;
+    background: var(--background);
+    border: 2px solid var(--highlight);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.timeline {
+    padding: 50px;
+    background: linear-gradient(to bottom, #914c14, var(--background));
+    border-radius: 12px;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    width: 70%;
+    padding: 15px;
+    margin: 10px 0;
+    background: var(--background);
+    border-radius: 8px;
+}
+
+.quotes {
+    padding: 30px;
+    font-style: italic;
+}
+
+.review-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #5b310f, var(--background));
+    color: var(--text-color);
+    border-radius: 12px;
+    margin-top: 60px;
+}
+
+
+.review-container {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.review-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: reveal 1s ease-in-out forwards;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.review-card:nth-child(1) { animation-delay: 0.3s; }
+.review-card:nth-child(2) { animation-delay: 0.5s; }
+.review-card:nth-child(3) { animation-delay: 0.7s; }
+.review-card:nth-child(4) { animation-delay: 0.9s; }
+
+.review-content h3 {
+    font-size: 1.5rem;
+    color: var(--highlight);
+    margin-bottom: 10px;
+}
+
+.review-content p {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.source {
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    background: linear-gradient(to bottom, #653005, var(--background))
+    color: var(--text-color);
+    border-top: 2px solid var(--color-grey-2);
+    border-radius: 12px;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--accent);
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+
+.cast-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, var(--accent), var(--highlight));
+    color: var(--text-color);
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.cast-header h2 {
+    font-size: 2rem;
+    text-shadow: 2px 2px var(--background);
+}
+
+
+.cast-section {
+    margin-top: 12px;
+    padding: 30px 0;
+}
+
+.cast-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--highlight);
+}
+
+
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cast-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+.cast-card:hover {
+    transform: scale(1.05);
+}
+
+.cast-card img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .cast-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    margin: 9px;
+}
+
+@media (max-width: 768px) {
+  
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .about {
+        padding: 15px;
+    }
+
+    .tribute-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tribute-item {
+        width: 90%;
+    }
+
+    .timeline-container {
+        width: 90%;
+    }
+
+    .timeline-item {
+        width: 90%;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
