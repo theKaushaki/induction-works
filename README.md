@@ -1,21 +1,11 @@
-# IEEE VSSUT & E-Cell Tech Web Project
+## E-Cell Tech Web Project
 
 ## 🏛️ Project Overview
-This website is a dual-purpose project designed for two distinct tasks:
-1. **Personal Portfolio Website** – Developed for IEEE VSSUT Computer Society SBC members to showcase my basic WebDev skills and personality.
 2. **Movie-Based Website** – Created for E-Cell Tech members as part of a web development task, based on my favorite movie.
-
-Both sections are crafted with a unique blend of **technical precision and artistic storytelling**, ensuring a strong digital presence while maintaining a regal and refined aesthetic, I hope so.
 
 ---
 
 ## 📌 Features & Structure
-### **IEEE Portfolio Section**
-- **theKaushaki** – A powerful introduction, if not powerful, atleast visually appealing.
-- **About** – Highlights my personal achievements, skills, and journey.
-- **Curation** – Displaying my curated work in a structured and visually compelling format.
-- **Pick Me** – Seamless integration, cough-cough, for hashtag-professional networking.
-
 ### **E-Cell Movie Section**
 - **Home Page** – Overview of the movie, genre, storyline.
 - **Cast Page** – Featuring key actors and their roles.
