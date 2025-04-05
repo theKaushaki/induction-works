@@ -13,3 +13,23 @@ document.addEventListener("DOMContentLoaded", function () {
         quoteElement.textContent = quotes[randomIndex];
     }, 5000);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal");
+  
+    function handleScroll() {
+      for (let i = 0; i < reveals.length; i++) {
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+  
+        if (elementTop < windowHeight * 0.85) {
+          reveals[i].classList.add("visible");
+        }
+      }
+    }
+  
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+  });
+  
