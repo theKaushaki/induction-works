@@ -176,7 +176,7 @@ body {
 footer {
     margin-top: 50px;
     padding: 15px;
-    background: linear-gradient(to bottom, #653005, var(--background))
+    background: linear-gradient(to bottom, #653005, var(--background));
     color: var(--text-color);
     border-top: 2px solid var(--color-grey-2);
     border-radius: 12px;
